@@ -5,26 +5,58 @@ on:
         branches: [main]
 
 jobs:
-    test_pull_request:
-        name: Testing & Checking the code
+    call_pnpm_caching_workflow:
+        name: Set pnpm caching
+        uses: ./.github/workflows/pnpm-caching.yaml
+        with:
+            runner: ubuntu-latest
+            node-version: 18
+            pnpm-version: 7.14.0
+
+    test_depcheck:
+        needs: call_pnpm_caching_workflow
+        name: Testing Depcheck
         runs-on: ubuntu-latest
 
         steps:
-            - name: Checkout
-              uses: actions/checkout@v3
-
             - name: Setup Node environment
-              uses: ./
+              uses: Exlint/node-environment@v1
               with:
-                  node-version: 18.11.0
-                  package-manger: pnpm
+                  node-version: 18
+                  package-manager: pnpm
                   package-manager-version: 7.14.0
 
-            - name: Check unused dependencies
+            - name: Test Depcheck
               run: pnpm depcheck
 
-            - name: Check Typescript
-              run: pnpm type-check
+    test_typescript:
+        needs: call_pnpm_caching_workflow
+        name: Testing TypeScript
+        runs-on: ubuntu-latest
 
-            - name: Check Prettier
+        steps:
+            - name: Setup Node environment
+              uses: Exlint/node-environment@v1
+              with:
+                  node-version: 18
+                  package-manager: pnpm
+                  package-manager-version: 7.14.0
+
+            - name: Test TypeScript
+              run: pnpm type-check && pnpm -r --parallel type-check
+
+    test_prettier:
+        needs: call_pnpm_caching_workflow
+        name: Testing Prettier
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Setup Node environment
+              uses: Exlint/node-environment@v1
+              with:
+                  node-version: 18
+                  package-manager: pnpm
+                  package-manager-version: 7.14.0
+
+            - name: Test Prettier
               run: pnpm prettier

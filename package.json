@@ -1,6 +1,6 @@
 {
 	"name": "exlint-action-node-environment",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"description": "Setting up a NodeJS environment",
 	"private": true,
 	"repository": {
@@ -10,8 +10,8 @@
 	"keywords": [
 		"exlint",
 		"node",
-        "environment",
-        "package manager"
+		"environment",
+		"package manager"
 	],
 	"author": {
 		"name": "Exlint",
@@ -35,7 +35,7 @@
 		"prettier": "prettier --check **/*.{json,yaml}"
 	},
 	"devDependencies": {
-        "chalk": "4.1.2",
+		"chalk": "4.1.2",
 		"@commitlint/cli": "17.1.2",
 		"@types/node": "18.0.6",
 		"commitizen": "4.2.5",
