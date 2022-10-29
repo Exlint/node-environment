@@ -1,0 +1,52 @@
+{
+	"name": "exlint-action-node-environment",
+	"version": "1.0.0",
+	"description": "Setting up a NodeJS environment",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Exlint/node-environment.git"
+	},
+	"keywords": [
+		"exlint",
+		"node",
+        "environment",
+        "package manager"
+	],
+	"author": {
+		"name": "Exlint",
+		"email": "dev@exlint.io",
+		"url": "https://www.exlint.io"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Exlint/node-environment/issues"
+	},
+	"homepage": "https://github.com/Exlint/node-environment",
+	"scripts": {
+		"preinstall": "npx only-allow pnpm",
+		"husky:install": "husky install",
+		"git:config": "git config --local include.path ../.gitconfig",
+		"setdev": "run-p husky:install git:config",
+		"onboarding": "node ./scripts/onboarding.cjs",
+		"prepare": "is-ci || run-s setdev onboarding",
+		"type-check": "tsc --project ./tsconfig.json",
+		"depcheck": "depcheck --config ./.depcheckrc.json",
+		"prettier": "prettier --check **/*.{json,yaml}"
+	},
+	"devDependencies": {
+        "chalk": "4.1.2",
+		"@commitlint/cli": "17.1.2",
+		"@types/node": "18.0.6",
+		"commitizen": "4.2.5",
+		"cz-vinyl": "1.5.0",
+		"depcheck": "1.4.3",
+		"figlet": "1.5.2",
+		"husky": "8.0.1",
+		"is-ci": "3.0.1",
+		"lint-staged": "13.0.3",
+		"npm-run-all": "4.1.5",
+		"prettier": "2.7.1",
+		"typescript": "4.8.4"
+	}
+}

@@ -1,0 +1,61 @@
+name: 'Setup Node environment'
+author: 'Exlint'
+description: 'Installing NodeJS, package manager, setting a cache and install dependencies'
+
+inputs:
+    node-version:
+        description: 'Version of NodeJS to use'
+        required: true
+    package-manager:
+        description: 'Which package manager should be used'
+        required: true
+    package-manager-version:
+        description: 'Version of package-manager to use'
+        required: true
+
+runs:
+    using: 'composite'
+    steps:
+        - name: Check package manager
+          if: inputs.package-manager != 'npm' && inputs.package-manager != 'yarn' && inputs.package-manager != 'pnpm'
+          uses: actions/github-script@v3
+          with:
+              script: |
+                  core.setFailed('Package manager must be either "npm", "yarn" or "pnpm"')
+
+        - name: Install npm
+          if: inputs.package-manager == 'npm'
+          run: npm i -g npm@${{ inputs.package-manager-version }}
+          shell: bash
+
+        - name: Install yarn
+          if: inputs.package-manager == 'yarn'
+          run: yarn set version ${{ inputs.package-manager-version }}
+          shell: bash
+
+        - name: Install pnpm
+          if: inputs.package-manager == 'pnpm'
+          uses: pnpm/action-setup@v2
+          with:
+              version: ${{ inputs.package-manager-version }}
+
+        - name: Setup Node.js
+          uses: actions/setup-node@v3
+          with:
+              node-version: ${{ inputs.node-version }}
+              cache: ${{ inputs.package-manager }}
+
+        - name: Installing dependencies
+          if: inputs.package-manager == 'npm'
+          run: npm ci
+          shell: bash
+
+        - name: Installing dependencies
+          if: inputs.package-manager == 'yarn'
+          run: yarn install --immutable --immutable-cache --check-cache
+          shell: bash
+
+        - name: Installing dependencies
+          if: inputs.package-manager == 'pnpm'
+          run: pnpm i --frozen-lockfile --prefer-offline
+          shell: bash
