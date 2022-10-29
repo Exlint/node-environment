@@ -17,7 +17,8 @@ jobs:
               uses: ./
               with:
                   node-version: 18.11.0
-                  pnpm-version: 7.14.0
+                  package-manger: pnpm
+                  package-manager-version: 7.14.0
 
             - name: Check unused dependencies
               run: pnpm depcheck

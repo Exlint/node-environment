@@ -5,13 +5,16 @@ description: 'Installing NodeJS, package manager, setting a cache and install de
 inputs:
     node-version:
         description: 'Version of NodeJS to use'
-        required: true
+        required: false
+        default: latest
     package-manager:
         description: 'Which package manager should be used'
-        required: true
+        required: false
+        default: npm
     package-manager-version:
         description: 'Version of package-manager to use'
-        required: true
+        required: false
+        default: latest
 
 runs:
     using: 'composite'
