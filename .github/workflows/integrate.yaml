@@ -43,7 +43,7 @@ jobs:
                   package-manager-version: 7.14.1
 
             - name: Test TypeScript
-              run: pnpm type-check && pnpm -r --parallel type-check
+              run: pnpm type-check
 
     test_prettier:
         needs: call_pnpm_caching_workflow
