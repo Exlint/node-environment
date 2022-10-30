@@ -1,1 +1,1 @@
-# Exlint Action - Node Environment
+# Exlint Action - Node Environment setup
