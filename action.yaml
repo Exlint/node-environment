@@ -26,6 +26,9 @@ runs:
               script: |
                   core.setFailed('Package manager must be either "npm", "yarn" or "pnpm"')
 
+        - name: Checkout
+          uses: actions/checkout@v3
+
         - name: Install npm
           if: inputs.package-manager == 'npm'
           run: npm i -g npm@${{ inputs.package-manager-version }}
