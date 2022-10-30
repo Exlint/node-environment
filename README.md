@@ -1,1 +1,1 @@
-# Exlint Action - Node Environment setup
+# Exlint Action - NodeJS Environment setup
