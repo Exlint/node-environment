@@ -1,6 +1,6 @@
 module.exports = {
 	branches: ['main'],
-	repositoryUrl: 'git+https://github.com/Exlint/node-environment.git',
+	repositoryUrl: 'git+https://github.com/Exlint/node-environment',
 	plugins: [
 		'@semantic-release/commit-analyzer',
 		'@semantic-release/release-notes-generator',
