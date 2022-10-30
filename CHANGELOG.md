@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Exlint/node-environment/compare/v1.0.1...v1.0.2) (2022-10-30)
+
+
+### Bug Fixes
+
+* 🐞 set release ([03795ef](https://github.com/Exlint/node-environment/commit/03795efd6303db029645026f4e5a7dac66b8b6c9))
+
 ## [1.0.1](https://github.com/Exlint/node-environment/compare/v1.0.0...v1.0.1) (2022-10-30)
 
 

@@ -1,6 +1,6 @@
 {
 	"name": "exlint-action-node-environment",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Setting up a NodeJS environment",
 	"private": true,
 	"repository": {
