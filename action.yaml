@@ -21,7 +21,7 @@ runs:
     steps:
         - name: Check package manager
           if: inputs.package-manager != 'npm' && inputs.package-manager != 'yarn' && inputs.package-manager != 'pnpm'
-          uses: actions/github-script@v3
+          uses: actions/github-script@v6
           with:
               script: |
                   core.setFailed('Package manager must be either "npm", "yarn" or "pnpm"')
