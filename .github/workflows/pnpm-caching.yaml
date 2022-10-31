@@ -16,6 +16,9 @@ on:
 jobs:
     install_dependencies:
         name: Install dependencies and caching
+        permissions:
+            contents: read
+
         runs-on: ${{ inputs.runner }}
 
         steps:

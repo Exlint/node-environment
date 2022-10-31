@@ -4,6 +4,9 @@ on:
     pull_request:
         branches: [main]
 
+permissions:
+    contents: read
+
 jobs:
     call_pnpm_caching_workflow:
         name: Set pnpm caching
