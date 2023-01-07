@@ -3,6 +3,10 @@ author: 'Exlint'
 description: 'Installing NodeJS, package manager, setting a cache and install dependencies'
 
 inputs:
+    should-cache:
+        description: 'Whether caching is enabled'
+        required: false
+        default: true
     node-version:
         description: 'Version of NodeJS to use'
         required: false
@@ -46,10 +50,17 @@ runs:
               version: ${{ inputs.package-manager-version }}
 
         - name: Setup Node.js
+          if: inputs.should-cache == true
           uses: actions/setup-node@v3
           with:
               node-version: ${{ inputs.node-version }}
               cache: ${{ inputs.package-manager }}
+
+        - name: Setup Node.js
+          if: inputs.should-cache == false
+          uses: actions/setup-node@v3
+          with:
+              node-version: ${{ inputs.node-version }}
 
         - name: Installing dependencies
           if: inputs.package-manager == 'npm'
