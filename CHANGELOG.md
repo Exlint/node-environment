@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Exlint/node-environment/compare/v1.1.0...v1.2.0) (2023-01-31)
+
+
+### Features
+
+* 🔥 support sub-modules ([3063e10](https://github.com/Exlint/node-environment/commit/3063e10c9702c8a54750222481da5dc684a430a5))
+
 # [1.1.0](https://github.com/Exlint/node-environment/compare/v1.0.4...v1.1.0) (2023-01-12)
 
 
