@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Exlint/node-environment/compare/v1.2.0...v1.2.1) (2023-01-31)
+
+
+### Bug Fixes
+
+* 🐞 fix inputs ([e220f4e](https://github.com/Exlint/node-environment/commit/e220f4e6e16a035f2d39228c6ff6a6132b644f77))
+
 # [1.2.0](https://github.com/Exlint/node-environment/compare/v1.1.0...v1.2.0) (2023-01-31)
 
 
