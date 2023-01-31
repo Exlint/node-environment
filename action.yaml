@@ -41,7 +41,7 @@ runs:
         - name: Checkout
           uses: actions/checkout@v3
           with:
-              submodules: ${{ input.sub-modules }}
+              submodules: ${{ inputs.sub-modules }}
 
         - name: Install npm
           if: inputs.package-manager == 'npm'
