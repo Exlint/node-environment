@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/Exlint/node-environment/compare/v1.2.1...v1.2.2) (2023-02-02)
+
+
+### Bug Fixes
+
+* 🐞 change order ([7ef83c7](https://github.com/Exlint/node-environment/commit/7ef83c7423673e2ac48fb50b7a568bef70d92985))
+
 ## [1.2.1](https://github.com/Exlint/node-environment/compare/v1.2.0...v1.2.1) (2023-01-31)
 
 
