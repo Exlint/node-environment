@@ -43,6 +43,19 @@ runs:
           with:
               submodules: ${{ inputs.sub-modules }}
 
+        - name: Setup Node.js
+          if: inputs.should-cache == true
+          uses: actions/setup-node@v3
+          with:
+              node-version: ${{ inputs.node-version }}
+              cache: ${{ inputs.package-manager }}
+
+        - name: Setup Node.js
+          if: inputs.should-cache == false
+          uses: actions/setup-node@v3
+          with:
+              node-version: ${{ inputs.node-version }}
+
         - name: Install npm
           if: inputs.package-manager == 'npm'
           run: npm i -g npm@${{ inputs.package-manager-version }}
@@ -58,19 +71,6 @@ runs:
           uses: pnpm/action-setup@v2
           with:
               version: ${{ inputs.package-manager-version }}
-
-        - name: Setup Node.js
-          if: inputs.should-cache == true
-          uses: actions/setup-node@v3
-          with:
-              node-version: ${{ inputs.node-version }}
-              cache: ${{ inputs.package-manager }}
-
-        - name: Setup Node.js
-          if: inputs.should-cache == false
-          uses: actions/setup-node@v3
-          with:
-              node-version: ${{ inputs.node-version }}
 
         - name: Installing dependencies
           if: inputs.package-manager == 'npm'
