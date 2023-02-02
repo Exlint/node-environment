@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/Exlint/node-environment/compare/v1.2.3...v1.2.4) (2023-02-02)
+
+
+### Bug Fixes
+
+* 🐞 fix comparison for booleans ([27cf4bd](https://github.com/Exlint/node-environment/commit/27cf4bdebde2bc2383dedad94121d06b096104ed))
+
 ## [1.2.3](https://github.com/Exlint/node-environment/compare/v1.2.2...v1.2.3) (2023-02-02)
 
 
