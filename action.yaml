@@ -44,13 +44,13 @@ runs:
               submodules: ${{ inputs.sub-modules }}
 
         - name: Setup Node.js
-          if: ${{ inputs.should-cache == false }}
+          if: ${{ inputs.should-cache == 'false' }}
           uses: actions/setup-node@v3
           with:
               node-version: ${{ inputs.node-version }}
 
         - name: Setup Node.js
-          if: ${{ inputs.should-cache == true }}
+          if: ${{ inputs.should-cache == 'true' }}
           uses: actions/setup-node@v3
           with:
               node-version: ${{ inputs.node-version }}
