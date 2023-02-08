@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/Exlint/node-environment/compare/v1.2.4...v1.2.5) (2023-02-05)
+
+
+### Bug Fixes
+
+* 🐞 fix strings ([a5b3883](https://github.com/Exlint/node-environment/commit/a5b388362aef1dbfc7cb36f8cc318d2cf110ef3d))
+
 ## [1.2.4](https://github.com/Exlint/node-environment/compare/v1.2.3...v1.2.4) (2023-02-02)
 
 
