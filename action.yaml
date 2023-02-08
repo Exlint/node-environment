@@ -43,6 +43,12 @@ runs:
           with:
               submodules: ${{ inputs.sub-modules }}
 
+        - name: Install pnpm
+          if: inputs.package-manager == 'pnpm'
+          uses: pnpm/action-setup@v2
+          with:
+              version: ${{ inputs.package-manager-version }}
+
         - name: Setup Node.js
           if: ${{ inputs.should-cache == 'false' }}
           uses: actions/setup-node@v3
@@ -65,12 +71,6 @@ runs:
           if: inputs.package-manager == 'yarn'
           run: yarn set version ${{ inputs.package-manager-version }}
           shell: bash
-
-        - name: Install pnpm
-          if: inputs.package-manager == 'pnpm'
-          uses: pnpm/action-setup@v2
-          with:
-              version: ${{ inputs.package-manager-version }}
 
         - name: Installing dependencies
           if: inputs.package-manager == 'npm'
