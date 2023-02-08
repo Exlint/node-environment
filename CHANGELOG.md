@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/Exlint/node-environment/compare/v1.2.5...v1.2.6) (2023-02-08)
+
+
+### Bug Fixes
+
+* 🐞 fix order of installation for pnpm ([c672fa0](https://github.com/Exlint/node-environment/commit/c672fa0922a71f12b58e14673733523a326adb9a))
+
 ## [1.2.5](https://github.com/Exlint/node-environment/compare/v1.2.4...v1.2.5) (2023-02-05)
 
 
