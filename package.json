@@ -37,7 +37,7 @@
 	"devDependencies": {
 		"chalk": "4.1.2",
 		"@commitlint/cli": "17.4.4",
-		"@types/node": "18.13.0",
+		"@types/node": "18.14.0",
 		"commitizen": "4.3.0",
 		"cz-vinyl": "1.6.2",
 		"depcheck": "1.4.3",
