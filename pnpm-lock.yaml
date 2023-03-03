@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@commitlint/cli': 17.4.4
-  '@types/node': 18.14.3
+  '@types/node': 18.14.5
   chalk: 4.1.2
   commitizen: 4.3.0
   cz-vinyl: 1.6.2
@@ -17,10 +17,10 @@ specifiers:
 
 devDependencies:
   '@commitlint/cli': 17.4.4
-  '@types/node': 18.14.3
+  '@types/node': 18.14.5
   chalk: 4.1.2
   commitizen: 4.3.0
-  cz-vinyl: 1.6.2_fbw4n4cxpjucr6kduybjguobkm
+  cz-vinyl: 1.6.2_2cogyjchoknpkalymtikkc6nay
   depcheck: 1.4.3
   figlet: 1.5.2
   husky: 8.0.3
@@ -225,15 +225,15 @@ packages:
       '@commitlint/execute-rule': 17.4.0
       '@commitlint/resolve-extends': 17.4.4
       '@commitlint/types': 17.4.4
-      '@types/node': 18.14.3
+      '@types/node': 18.14.5
       chalk: 4.1.2
       cosmiconfig: 8.0.0
-      cosmiconfig-typescript-loader: 4.1.1_ifozrduafhficd653azprossyi
+      cosmiconfig-typescript-loader: 4.1.1_rky2yhhripfih54rg5x32zzofy
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
       resolve-from: 5.0.0
-      ts-node: 10.9.1_fbw4n4cxpjucr6kduybjguobkm
+      ts-node: 10.9.1_2cogyjchoknpkalymtikkc6nay
       typescript: 4.9.5
     transitivePeerDependencies:
       - '@swc/core'
@@ -375,8 +375,8 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node/18.14.3:
-    resolution: {integrity: sha512-1y36CC5iL5CMyKALzwX9cwwxcWIxvIBe3gzs4GrXWXEQ8klQnCZ2U/WDGiNrXHmQcUhnaun17XG9TEIDlGj2RA==}
+  /@types/node/18.14.5:
+    resolution: {integrity: sha512-CRT4tMK/DHYhw1fcCEBwME9CSaZNclxfzVMe7GsO6ULSwsttbj70wSiX6rZdIjGblu93sTJxLdhNIT85KKI7Qw==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -860,23 +860,23 @@ packages:
       through2: 4.0.2
     dev: true
 
-  /cosmiconfig-typescript-loader/2.0.1_fbw4n4cxpjucr6kduybjguobkm:
+  /cosmiconfig-typescript-loader/2.0.1_2cogyjchoknpkalymtikkc6nay:
     resolution: {integrity: sha512-B9s6sX/omXq7I6gC6+YgLmrBFMJhPWew7ty/X5Tuwtd2zOSgWaUdXjkuVwbe3qqcdETo60+1nSVMekq//LIXVA==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@types/node': '*'
       typescript: '>=3'
     dependencies:
-      '@types/node': 18.14.3
+      '@types/node': 18.14.5
       cosmiconfig: 7.0.1
-      ts-node: 10.9.1_fbw4n4cxpjucr6kduybjguobkm
+      ts-node: 10.9.1_2cogyjchoknpkalymtikkc6nay
       typescript: 4.9.5
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
     dev: true
 
-  /cosmiconfig-typescript-loader/4.1.1_ifozrduafhficd653azprossyi:
+  /cosmiconfig-typescript-loader/4.1.1_rky2yhhripfih54rg5x32zzofy:
     resolution: {integrity: sha512-9DHpa379Gp0o0Zefii35fcmuuin6q92FnLDffzdZ0l9tVd3nEobG3O+MZ06+kuBvFTSVScvNb/oHA13Nd4iipg==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
@@ -885,9 +885,9 @@ packages:
       ts-node: '>=10'
       typescript: '>=3'
     dependencies:
-      '@types/node': 18.14.3
+      '@types/node': 18.14.5
       cosmiconfig: 8.0.0
-      ts-node: 10.9.1_fbw4n4cxpjucr6kduybjguobkm
+      ts-node: 10.9.1_2cogyjchoknpkalymtikkc6nay
       typescript: 4.9.5
     dev: true
 
@@ -953,16 +953,16 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /cz-vinyl/1.6.2_fbw4n4cxpjucr6kduybjguobkm:
+  /cz-vinyl/1.6.2_2cogyjchoknpkalymtikkc6nay:
     resolution: {integrity: sha512-fg/BKTF4Ky8n7GfZAdRjCVtjAnOXlFzVAJHA97RByBPOBCf0ATGhVdDi6nP6XI/W1NzdoHTOdgV+lWEJ3iVW2Q==}
     engines: {node: '>= 12'}
     peerDependencies:
       '@types/node': 17.0.33
       vite: 2.9.9
     dependencies:
-      '@types/node': 18.14.3
+      '@types/node': 18.14.5
       cosmiconfig: 7.0.1
-      cosmiconfig-typescript-loader: 2.0.1_fbw4n4cxpjucr6kduybjguobkm
+      cosmiconfig-typescript-loader: 2.0.1_2cogyjchoknpkalymtikkc6nay
       fuse.js: 6.6.2
       inquirer: 8.2.4
       inquirer-autocomplete-prompt: 2.0.0_inquirer@8.2.4
@@ -2982,7 +2982,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-node/10.9.1_fbw4n4cxpjucr6kduybjguobkm:
+  /ts-node/10.9.1_2cogyjchoknpkalymtikkc6nay:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -3001,7 +3001,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 18.14.3
+      '@types/node': 18.14.5
       acorn: 8.8.1
       acorn-walk: 8.2.0
       arg: 4.1.3
