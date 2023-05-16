@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@commitlint/cli': 17.6.3
-  '@types/node': 18.16.9
+  '@types/node': 18.16.10
   chalk: 4.1.2
   commitizen: 4.3.0
   cz-vinyl: 1.6.2
@@ -17,10 +17,10 @@ specifiers:
 
 devDependencies:
   '@commitlint/cli': 17.6.3
-  '@types/node': 18.16.9
+  '@types/node': 18.16.10
   chalk: 4.1.2
   commitizen: 4.3.0
-  cz-vinyl: 1.6.2_ypbwlajjd4vrskjs3h7ssrl524
+  cz-vinyl: 1.6.2_5ksvqdugar5bf5fk4z54vw4zba
   depcheck: 1.4.3
   figlet: 1.6.0
   husky: 8.0.3
@@ -225,15 +225,15 @@ packages:
       '@commitlint/execute-rule': 17.4.0
       '@commitlint/resolve-extends': 17.4.4
       '@commitlint/types': 17.4.4
-      '@types/node': 18.16.9
+      '@types/node': 18.16.10
       chalk: 4.1.2
       cosmiconfig: 8.0.0
-      cosmiconfig-typescript-loader: 4.1.1_tntur5rx6b6hyv6vqumkmmb4wq
+      cosmiconfig-typescript-loader: 4.1.1_s3olclabqn2iimmdkvi4nckg6a
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
       resolve-from: 5.0.0
-      ts-node: 10.9.1_ypbwlajjd4vrskjs3h7ssrl524
+      ts-node: 10.9.1_5ksvqdugar5bf5fk4z54vw4zba
       typescript: 4.9.5
     transitivePeerDependencies:
       - '@swc/core'
@@ -375,8 +375,8 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node/18.16.9:
-    resolution: {integrity: sha512-IeB32oIV4oGArLrd7znD2rkHQ6EDCM+2Sr76dJnrHwv9OHBTTM6nuDLK9bmikXzPa0ZlWMWtRGo/Uw4mrzQedA==}
+  /@types/node/18.16.10:
+    resolution: {integrity: sha512-sMo3EngB6QkMBlB9rBe1lFdKSLqljyWPPWv6/FzSxh/IDlyVWSzE9RiF4eAuerQHybrWdqBgAGb03PM89qOasA==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -865,23 +865,23 @@ packages:
       through2: 4.0.2
     dev: true
 
-  /cosmiconfig-typescript-loader/2.0.1_ypbwlajjd4vrskjs3h7ssrl524:
+  /cosmiconfig-typescript-loader/2.0.1_5ksvqdugar5bf5fk4z54vw4zba:
     resolution: {integrity: sha512-B9s6sX/omXq7I6gC6+YgLmrBFMJhPWew7ty/X5Tuwtd2zOSgWaUdXjkuVwbe3qqcdETo60+1nSVMekq//LIXVA==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@types/node': '*'
       typescript: '>=3'
     dependencies:
-      '@types/node': 18.16.9
+      '@types/node': 18.16.10
       cosmiconfig: 7.0.1
-      ts-node: 10.9.1_ypbwlajjd4vrskjs3h7ssrl524
+      ts-node: 10.9.1_5ksvqdugar5bf5fk4z54vw4zba
       typescript: 4.9.5
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
     dev: true
 
-  /cosmiconfig-typescript-loader/4.1.1_tntur5rx6b6hyv6vqumkmmb4wq:
+  /cosmiconfig-typescript-loader/4.1.1_s3olclabqn2iimmdkvi4nckg6a:
     resolution: {integrity: sha512-9DHpa379Gp0o0Zefii35fcmuuin6q92FnLDffzdZ0l9tVd3nEobG3O+MZ06+kuBvFTSVScvNb/oHA13Nd4iipg==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
@@ -890,9 +890,9 @@ packages:
       ts-node: '>=10'
       typescript: '>=3'
     dependencies:
-      '@types/node': 18.16.9
+      '@types/node': 18.16.10
       cosmiconfig: 8.0.0
-      ts-node: 10.9.1_ypbwlajjd4vrskjs3h7ssrl524
+      ts-node: 10.9.1_5ksvqdugar5bf5fk4z54vw4zba
       typescript: 4.9.5
     dev: true
 
@@ -958,16 +958,16 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /cz-vinyl/1.6.2_ypbwlajjd4vrskjs3h7ssrl524:
+  /cz-vinyl/1.6.2_5ksvqdugar5bf5fk4z54vw4zba:
     resolution: {integrity: sha512-fg/BKTF4Ky8n7GfZAdRjCVtjAnOXlFzVAJHA97RByBPOBCf0ATGhVdDi6nP6XI/W1NzdoHTOdgV+lWEJ3iVW2Q==}
     engines: {node: '>= 12'}
     peerDependencies:
       '@types/node': 17.0.33
       vite: 2.9.9
     dependencies:
-      '@types/node': 18.16.9
+      '@types/node': 18.16.10
       cosmiconfig: 7.0.1
-      cosmiconfig-typescript-loader: 2.0.1_ypbwlajjd4vrskjs3h7ssrl524
+      cosmiconfig-typescript-loader: 2.0.1_5ksvqdugar5bf5fk4z54vw4zba
       fuse.js: 6.6.2
       inquirer: 8.2.4
       inquirer-autocomplete-prompt: 2.0.0_inquirer@8.2.4
@@ -3002,7 +3002,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-node/10.9.1_ypbwlajjd4vrskjs3h7ssrl524:
+  /ts-node/10.9.1_5ksvqdugar5bf5fk4z54vw4zba:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -3021,7 +3021,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 18.16.9
+      '@types/node': 18.16.10
       acorn: 8.8.1
       acorn-walk: 8.2.0
       arg: 4.1.3
