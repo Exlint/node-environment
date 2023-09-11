@@ -40,7 +40,7 @@
 		"@types/node": "18.17.15",
 		"commitizen": "4.3.0",
 		"cz-vinyl": "1.6.2",
-		"depcheck": "1.4.5",
+		"depcheck": "1.4.6",
 		"figlet": "1.6.0",
 		"husky": "8.0.3",
 		"is-ci": "3.0.1",
