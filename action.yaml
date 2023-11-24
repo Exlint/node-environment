@@ -51,13 +51,13 @@ runs:
 
         - name: Setup Node.js
           if: ${{ inputs.should-cache == 'false' }}
-          uses: actions/setup-node@v3
+          uses: actions/setup-node@v4
           with:
               node-version: ${{ inputs.node-version }}
 
         - name: Setup Node.js
           if: ${{ inputs.should-cache == 'true' }}
-          uses: actions/setup-node@v3
+          uses: actions/setup-node@v4
           with:
               node-version: ${{ inputs.node-version }}
               cache: ${{ inputs.package-manager }}
