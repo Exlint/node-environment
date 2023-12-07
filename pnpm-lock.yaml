@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@commitlint/cli': 18.4.3
-  '@types/node': 20.10.3
+  '@types/node': 20.10.4
   chalk: 4.1.2
   commitizen: 4.3.0
   cz-vinyl: 1.6.2
@@ -17,10 +17,10 @@ specifiers:
 
 devDependencies:
   '@commitlint/cli': 18.4.3_typescript@5.3.3
-  '@types/node': 20.10.3
+  '@types/node': 20.10.4
   chalk: 4.1.2
   commitizen: 4.3.0_typescript@5.3.3
-  cz-vinyl: 1.6.2_7fgboljcrgulnqjrf7zn7mnwhu
+  cz-vinyl: 1.6.2_yn7bv5jzkfjmbt2js7kurghsqq
   depcheck: 1.4.7
   figlet: 1.7.0
   husky: 8.0.3
@@ -384,8 +384,8 @@ packages:
       undici-types: 5.26.5
     dev: true
 
-  /@types/node/20.10.3:
-    resolution: {integrity: sha512-XJavIpZqiXID5Yxnxv3RUDKTN5b81ddNC3ecsA0SoFXz/QU8OGBwZGMomiq0zw+uuqbL/krztv/DINAQ/EV4gg==}
+  /@types/node/20.10.4:
+    resolution: {integrity: sha512-D08YG6rr8X90YB56tSIuBaddy/UXAA9RKJoFvrsnogAum/0pmjkgi4+2nx96A330FmioegBWmEYQ+syqCFaveg==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -842,16 +842,16 @@ packages:
       split2: 4.2.0
     dev: true
 
-  /cosmiconfig-typescript-loader/2.0.1_7fgboljcrgulnqjrf7zn7mnwhu:
+  /cosmiconfig-typescript-loader/2.0.1_yn7bv5jzkfjmbt2js7kurghsqq:
     resolution: {integrity: sha512-B9s6sX/omXq7I6gC6+YgLmrBFMJhPWew7ty/X5Tuwtd2zOSgWaUdXjkuVwbe3qqcdETo60+1nSVMekq//LIXVA==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@types/node': '*'
       typescript: '>=3'
     dependencies:
-      '@types/node': 20.10.3
+      '@types/node': 20.10.4
       cosmiconfig: 7.1.0
-      ts-node: 10.9.1_7fgboljcrgulnqjrf7zn7mnwhu
+      ts-node: 10.9.1_yn7bv5jzkfjmbt2js7kurghsqq
       typescript: 5.3.3
     transitivePeerDependencies:
       - '@swc/core'
@@ -950,16 +950,16 @@ packages:
       - typescript
     dev: true
 
-  /cz-vinyl/1.6.2_7fgboljcrgulnqjrf7zn7mnwhu:
+  /cz-vinyl/1.6.2_yn7bv5jzkfjmbt2js7kurghsqq:
     resolution: {integrity: sha512-fg/BKTF4Ky8n7GfZAdRjCVtjAnOXlFzVAJHA97RByBPOBCf0ATGhVdDi6nP6XI/W1NzdoHTOdgV+lWEJ3iVW2Q==}
     engines: {node: '>= 12'}
     peerDependencies:
       '@types/node': 17.0.33
       vite: 2.9.9
     dependencies:
-      '@types/node': 20.10.3
+      '@types/node': 20.10.4
       cosmiconfig: 7.0.1
-      cosmiconfig-typescript-loader: 2.0.1_7fgboljcrgulnqjrf7zn7mnwhu
+      cosmiconfig-typescript-loader: 2.0.1_yn7bv5jzkfjmbt2js7kurghsqq
       fuse.js: 6.6.2
       inquirer: 8.2.4
       inquirer-autocomplete-prompt: 2.0.0_inquirer@8.2.4
@@ -2928,7 +2928,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-node/10.9.1_7fgboljcrgulnqjrf7zn7mnwhu:
+  /ts-node/10.9.1_yn7bv5jzkfjmbt2js7kurghsqq:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -2947,7 +2947,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 20.10.3
+      '@types/node': 20.10.4
       acorn: 8.8.1
       acorn-walk: 8.2.0
       arg: 4.1.3
