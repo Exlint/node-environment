@@ -12,7 +12,7 @@ specifiers:
   is-ci: 3.0.1
   lint-staged: 13.3.0
   npm-run-all: 4.1.5
-  prettier: 3.2.2
+  prettier: 3.2.5
   typescript: 5.3.3
 
 devDependencies:
@@ -27,7 +27,7 @@ devDependencies:
   is-ci: 3.0.1
   lint-staged: 13.3.0
   npm-run-all: 4.1.5
-  prettier: 3.2.2
+  prettier: 3.2.5
   typescript: 5.3.3
 
 packages:
@@ -2424,8 +2424,8 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
-  /prettier/3.2.2:
-    resolution: {integrity: sha512-HTByuKZzw7utPiDO523Tt2pLtEyK7OibUD9suEJQrPUCYQqrHr74GGX6VidMrovbf/I50mPqr8j/II6oBAuc5A==}
+  /prettier/3.2.5:
+    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
