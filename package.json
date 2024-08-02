@@ -39,7 +39,7 @@
 		"@commitlint/cli": "18.6.1",
 		"@types/node": "20.14.14",
 		"commitizen": "4.3.0",
-		"cz-vinyl": "1.6.2",
+		"cz-vinyl": "2.5.1",
 		"depcheck": "1.4.7",
 		"figlet": "1.7.0",
 		"husky": "8.0.3",
