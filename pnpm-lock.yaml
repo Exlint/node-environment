@@ -4,7 +4,7 @@ specifiers:
   '@commitlint/cli': 18.6.1
   '@types/node': 20.16.9
   chalk: 4.1.2
-  commitizen: 4.3.0
+  commitizen: 4.3.1
   cz-vinyl: 1.6.2
   depcheck: 1.4.7
   figlet: 1.7.0
@@ -19,7 +19,7 @@ devDependencies:
   '@commitlint/cli': 18.6.1_jeqbknj46pgdeszrzbax4bk7my
   '@types/node': 20.16.9
   chalk: 4.1.2
-  commitizen: 4.3.0_jeqbknj46pgdeszrzbax4bk7my
+  commitizen: 4.3.1_jeqbknj46pgdeszrzbax4bk7my
   cz-vinyl: 1.6.2_jeqbknj46pgdeszrzbax4bk7my
   depcheck: 1.4.7
   figlet: 1.7.0
@@ -780,8 +780,8 @@ packages:
     engines: {node: '>=16'}
     dev: true
 
-  /commitizen/4.3.0_jeqbknj46pgdeszrzbax4bk7my:
-    resolution: {integrity: sha512-H0iNtClNEhT0fotHvGV3E9tDejDeS04sN1veIebsKYGMuGscFaswRoYJKmT3eW85eIJAs0F28bG2+a/9wCOfPw==}
+  /commitizen/4.3.1_jeqbknj46pgdeszrzbax4bk7my:
+    resolution: {integrity: sha512-gwAPAVTy/j5YcOOebcCRIijn+mSjWJC+IYKivTu6aG8Ei/scoXgfsMRnuAk6b0GRste2J4NGxVdMN3ZpfNaVaw==}
     engines: {node: '>= 12'}
     hasBin: true
     dependencies:
@@ -934,7 +934,7 @@ packages:
     engines: {node: '>= 10'}
     dependencies:
       chalk: 2.4.2
-      commitizen: 4.3.0_jeqbknj46pgdeszrzbax4bk7my
+      commitizen: 4.3.1_jeqbknj46pgdeszrzbax4bk7my
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
@@ -1365,6 +1365,7 @@ packages:
 
   /glob/7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -1519,6 +1520,7 @@ packages:
 
   /inflight/1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
     dependencies:
       once: 1.4.0
       wrappy: 1.0.2
@@ -1543,7 +1545,7 @@ packages:
       inquirer: 8.2.4
       picocolors: 1.0.0
       run-async: 2.4.1
-      rxjs: 7.5.7
+      rxjs: 7.8.0
     dev: true
 
   /inquirer-maxlength-input-prompt/1.0.2:
@@ -1590,7 +1592,7 @@ packages:
       mute-stream: 0.0.8
       ora: 5.4.1
       run-async: 2.4.1
-      rxjs: 7.5.7
+      rxjs: 7.8.0
       string-width: 4.2.3
       strip-ansi: 6.0.1
       through: 2.3.8
@@ -2596,12 +2598,6 @@ packages:
     engines: {npm: '>=2.0.0'}
     dependencies:
       symbol-observable: 1.0.1
-    dev: true
-
-  /rxjs/7.5.7:
-    resolution: {integrity: sha512-z9MzKh/UcOqB3i20H6rtrlaE/CgjLOvheWK/9ILrbhROGTweAi1BaFsTT9FbwZi5Trr1qNRs+MXkhmR06awzQA==}
-    dependencies:
-      tslib: 2.4.0
     dev: true
 
   /rxjs/7.8.0:
