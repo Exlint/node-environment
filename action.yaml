@@ -39,7 +39,7 @@ runs:
                   core.setFailed('Package manager must be either "npm", "yarn" or "pnpm"')
 
         - name: Checkout
-          uses: actions/checkout@v4
+          uses: actions/checkout@v5
           with:
               submodules: ${{ inputs.sub-modules }}
 
