@@ -7,7 +7,7 @@ specifiers:
   commitizen: 4.3.1
   cz-vinyl: 1.6.2
   depcheck: 1.4.7
-  figlet: 1.8.2
+  figlet: 1.9.3
   husky: 8.0.3
   is-ci: 3.0.1
   lint-staged: 13.3.0
@@ -22,7 +22,7 @@ devDependencies:
   commitizen: 4.3.1_k7ibut4y2du4gcf2cgvyldgqzi
   cz-vinyl: 1.6.2_k7ibut4y2du4gcf2cgvyldgqzi
   depcheck: 1.4.7
-  figlet: 1.8.2
+  figlet: 1.9.3
   husky: 8.0.3
   is-ci: 3.0.1
   lint-staged: 13.3.0
@@ -780,6 +780,11 @@ packages:
     engines: {node: '>=16'}
     dev: true
 
+  /commander/14.0.2:
+    resolution: {integrity: sha512-TywoWNNRbhoD0BXs1P3ZEScW8W5iKrnbithIl0YH+uCmBd0QpPOA8yc82DS3BIE5Ma6FnBVUsJ7wVUDz4dvOWQ==}
+    engines: {node: '>=20'}
+    dev: true
+
   /commitizen/4.3.1_k7ibut4y2du4gcf2cgvyldgqzi:
     resolution: {integrity: sha512-gwAPAVTy/j5YcOOebcCRIijn+mSjWJC+IYKivTu6aG8Ei/scoXgfsMRnuAk6b0GRste2J4NGxVdMN3ZpfNaVaw==}
     engines: {node: '>= 12'}
@@ -1214,10 +1219,12 @@ packages:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
     dev: true
 
-  /figlet/1.8.2:
-    resolution: {integrity: sha512-iPCpE9B/rOcjewIzDnagP9F2eySzGeHReX8WlrZQJkqFBk2wvq8gY0c6U6Hd2y9HnX1LQcYSeP7aEHoPt6sVKQ==}
-    engines: {node: '>= 0.4.0'}
+  /figlet/1.9.3:
+    resolution: {integrity: sha512-majPgOpVtrZN1iyNGbsUP6bOtZ6eaJgg5HHh0vFvm5DJhh8dc+FJpOC4GABvMZ/A7XHAJUuJujhgUY/2jPWgMA==}
+    engines: {node: '>= 17.0.0'}
     hasBin: true
+    dependencies:
+      commander: 14.0.2
     dev: true
 
   /figures/2.0.0:
