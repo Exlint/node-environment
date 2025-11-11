@@ -45,7 +45,7 @@ runs:
 
         - name: Install pnpm
           if: inputs.package-manager == 'pnpm'
-          uses: pnpm/action-setup@v2
+          uses: pnpm/action-setup@v4
           with:
               version: ${{ inputs.package-manager-version }}
 
