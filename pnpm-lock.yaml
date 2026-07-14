@@ -7,7 +7,7 @@ specifiers:
   commitizen: 4.3.2
   cz-vinyl: 1.6.2
   depcheck: 1.4.7
-  figlet: 1.11.0
+  figlet: 1.11.2
   husky: 8.0.3
   is-ci: 3.0.1
   lint-staged: 13.3.0
@@ -22,7 +22,7 @@ devDependencies:
   commitizen: 4.3.2_mivmdu67z4dbzsi3xfukybqsku
   cz-vinyl: 1.6.2_mivmdu67z4dbzsi3xfukybqsku
   depcheck: 1.4.7
-  figlet: 1.11.0
+  figlet: 1.11.2
   husky: 8.0.3
   is-ci: 3.0.1
   lint-staged: 13.3.0
@@ -1237,8 +1237,8 @@ packages:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
     dev: true
 
-  /figlet/1.11.0:
-    resolution: {integrity: sha512-EEx3OS/l2bFqcUNN2NM9FPJp8vAMrgbCxsbl2hbcJNNxOEwVe3mEzrhan7TbJQViZa8mMqhihlbCaqD+LyYKTQ==}
+  /figlet/1.11.2:
+    resolution: {integrity: sha512-VXzWZSFTauu1f4CJbj/EnlpDVaTjO33cp/xgH0CLtPS/aP59i3ElwyR2bquCEsAv2Apv9E29PX5Zy39ipeUqSw==}
     engines: {node: '>= 17.0.0'}
     hasBin: true
     dependencies:
